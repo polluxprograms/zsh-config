@@ -1,3 +1,6 @@
 [submodule "zsh-vi-mode"]
 	path = plugins/zsh-vi-mode
 	url = https://github.com/jeffreytse/zsh-vi-mode.git
+[submodule "plugins/zsh-async"]
+	path = plugins/zsh-async
+	url = https://github.com/mafredri/zsh-async.git

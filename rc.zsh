@@ -1,18 +1,17 @@
+fpath=(${0:A:h}/themes $fpath)
+
+source "${0:A:h}/pollux/init.zsh"
+
+PLUGIN_DIR="${0:A:h}/plugins"
+source "$PLUGIN_DIR/zsh-vi-mode/zsh-vi-mode.zsh"
+source "$PLUGIN_DIR/zsh-async/async.zsh"
+
 autoload -U compinit
 compinit
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format 'Sorry, no matches for: %d%b'
-
-
-PLUGIN_DIR="${0:A:h}/plugins"
-source "$PLUGIN_DIR/zsh-vi-mode/zsh-vi-mode.zsh"
-
-autoload -U promptinit
-promptinit
-
-prompt gentoo
 
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
