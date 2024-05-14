@@ -13,3 +13,5 @@ source "${0:A:h}/conda.zsh"
 source "${0:A:h}/pollux/init.zsh"
 
 export GPG_TTY="$(tty)"
+
+setopt autocd autopushd pushdignoredups
