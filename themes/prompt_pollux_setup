@@ -31,3 +31,5 @@ prompt_pollux_vcs_update() {
   vcs_info
   zle reset-prompt
 }
+
+prompt_pollux_setup "$@"
